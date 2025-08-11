@@ -14,6 +14,18 @@
     --gold-yellow: #fdd412;
 }
 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection,
+a::selection,
+li::selection {
+    background-color: var(--gold-yellow);
+    color: #111;
+}
+
 a:link,
 a:active,
 a:visited {
@@ -351,17 +363,19 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    padding-left: 32px;
 }
 
 .ads .col-1 h1 {
-    text-align: center;
+    text-align: left;
     width: 70%;
 }
 .ads .col-1 p {
     width: 80%;
+    text-align: left;
     line-height: 1.6rem;
     padding-bottom: 22px;
 }
@@ -386,13 +400,14 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    text-align: center;
+    text-align: right;
+    padding-right: 32px;
 }
 
 .ads-second .col-1 h1 {
-    text-align: center;
+    text-align: right;
     width: 70%;
 }
 .ads-second .col-1 p {
@@ -483,4 +498,82 @@ body {
     background-repeat: no-repeat;
 
 }
+
+.testimonials p {
+    padding-top: 0;
+}
+
+
+.testimonials-section {
+
+}
+
+.testimonials-section .mySwiper{
+
+}
+
+.testimonials-section .mySwiper .swiper-slide {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 24px;
+    border: 2px solid #696969;
+    border-bottom: 20px solid #696969;
+}
+
+.testimonials-section .mySwiper .swiper-slide .fa-quote-left {
+    font-size: 28px;
+}
+
+.testimonials-section .mySwiper .swiper-slide p {
+    line-height: 1.6rem;
+    font-size: 90%;
+    text-align: justify;
+}
+
+.testimonials-section .mySwiper .swiper-slide hr {
+    margin: 16px 0;
+}
+
+.testimonials-section .mySwiper .swiper-slide .info-bar {
+    display: flex;
+}
+
+.testimonials-section .mySwiper .swiper-slide .info-bar .left {
+    flex: 2;
+}
+
+.testimonials-section .mySwiper .swiper-slide .info-bar .left .small-title {
+    font-size: 80%;
+}
+
+.testimonials-section .mySwiper .swiper-slide .info-bar .right {
+    flex: 1;
+}
+
+
+
+.footer-section {
+    padding-top: 0;
+}
+
+.trustpilot-section {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.trustpilot-section .logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.trustpilot-section p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
 
