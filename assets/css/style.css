@@ -44,6 +44,10 @@ a:visited {
     border-radius: 8px;
 }
 
+.divider {
+    height: 50px;
+}
+
 section {
     width: 70%;
     margin: 0 auto;
@@ -183,7 +187,7 @@ body {
 .brands {
     width: 100%;
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
     background: transparent;
     position: relative; /* Needed for fade mask positioning */
 }
@@ -333,4 +337,74 @@ body {
 .info-board .container .col-2 .row-2 .col-2 p:last-child {
     font-size: 110%;
     line-height: 1.8rem;
+}
+
+
+.ads {
+    height: 420px;
+    background-image: url('../media/3840x1250_Shopify_2.webp');
+    background-size: cover;
+    display: flex;
+}
+
+.ads .col-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ads .col-1 h1 {
+    text-align: center;
+    width: 70%;
+}
+.ads .col-1 p {
+    width: 80%;
+    line-height: 1.6rem;
+    padding-bottom: 22px;
+}
+.ads .col-1 .btn-contact {
+    margin-top: 22px;
+}
+
+.ads .col-2 {
+    flex: 1;
+}
+
+
+.ads-second {
+    height: 420px;
+    background-image: url('../media/Image_with_Text_4_ed291b40-9c09-4018-8310-18485cb037c7.webp');
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ads-second .col-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ads-second .col-1 h1 {
+    text-align: center;
+    width: 70%;
+}
+.ads-second .col-1 p {
+    width: 80%;
+    line-height: 1.6rem;
+    padding-bottom: 22px;
+}
+.ads-second .col-1 .btn-contact {
+    margin-top: 22px;
+    background-color: rgb(138, 0, 252);
+}
+
+.ads-second .col-2 {
+    flex: 1;
 }
