@@ -11,6 +11,7 @@
     --background-main: #fff;
     --hero-small-text: #3d3d3d;
     --border-rd-small: 8px;
+    --gold-yellow: #fdd412;
 }
 
 a:link,
@@ -33,6 +34,14 @@ a:visited {
     line-height: 1.6rem;
     padding: 22px 0;
     color: #3d3d3d;
+}
+
+.btn-contact {
+    background-color: #111;
+    color: #fff !important;
+    padding: 20px 40px;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
 section {
@@ -114,8 +123,8 @@ body {
     margin-top: 32px;
     background-color: #ffffff;
     border-radius: var(--border-rd-small);
-    border-top: 6px solid green;
-    padding: 20px 10px;
+    border-top: 6px solid #fdd412;
+    padding: 20px 0px;
     box-shadow: 0 10px 14px #1111111d;
 }
 
@@ -171,13 +180,12 @@ body {
 }
 
 
-
-
 .brands {
     width: 100%;
     text-align: center;
     padding: 40px 0;
     background: transparent;
+    position: relative; /* Needed for fade mask positioning */
 }
 
 .brands h3 {
@@ -189,6 +197,29 @@ body {
 .slideshow {
     overflow: hidden;
     width: 100%;
+    position: relative; /* For the fade effect positioning */
+}
+
+/* Fade overlay effect */
+.slideshow::before,
+.slideshow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px; /* Width of fade area */
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slideshow::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.slideshow::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
 }
 
 .slide-track {
@@ -199,6 +230,7 @@ body {
 }
 
 .item {
+    cursor: pointer;
     flex: 0 0 auto;
     width: 160px;
     height: 100px;
@@ -225,3 +257,80 @@ body {
     100% { transform: translateX(calc(-50%)); }
 }
 
+
+
+/* #EAF1FE6E */
+
+.info-board {
+    padding: 72px 0;
+    background-color: #111;
+    color: #fafafa;
+    width: 100%;
+}
+
+.info-board .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+}
+
+.info-board .container .col-1, 
+.info-board .container .col-2 {
+    flex: 1;
+}
+
+.info-board .container .col-1 {
+    border-top: 1px solid var(--gold-yellow);
+    padding-top: 22px;
+    padding-bottom: 52px;
+}
+
+.info-board .container .col-1 p {
+    font-size: 90%;
+}
+
+.info-board .container .col-1 h1 {
+    width: 500px;
+}
+
+.info-board .container .col-1 .info-btn {
+    background-color: #fafafa;
+    color: #111 !important;
+}
+
+.info-board .container .col-2 .row-1, 
+.info-board .container .col-2 .row-2 {
+    display: flex;
+    gap: 40px;
+}
+
+.info-board .container .col-2 .row-1 .col-1,
+.info-board .container .col-2 .row-1 .col-2, 
+.info-board .container .col-2 .row-2 .col-2 {
+    border-top: 1px solid var(--gold-yellow);
+    padding-top: 22px;
+    padding-bottom: 52px;
+}
+
+.info-board .container .col-2 .row-1 .col-1 p:first-child,
+.info-board .container .col-2 .row-1 .col-2 p:first-child,
+.info-board .container .col-2 .row-2 .col-1 p:first-child,
+.info-board .container .col-2 .row-2 .col-2 p:first-child {
+    font-size: 110%;
+}
+
+.info-board .container .col-2 .row-1 .col-1 h2,
+.info-board .container .col-2 .row-1 .col-2 h2,
+.info-board .container .col-2 .row-2 .col-1 h2,
+.info-board .container .col-2 .row-2 .col-2 h2 {
+    padding: 22px 0;
+}
+
+.info-board .container .col-2 .row-1 .col-1 p:last-child,
+.info-board .container .col-2 .row-1 .col-2 p:last-child,
+.info-board .container .col-2 .row-2 .col-1 p:last-child,
+.info-board .container .col-2 .row-2 .col-2 p:last-child {
+    font-size: 110%;
+    line-height: 1.8rem;
+}
