@@ -408,3 +408,79 @@ body {
 .ads-second .col-2 {
     flex: 1;
 }
+
+
+.services-section {
+    background-color: #111;
+    width: 100%;
+    margin: 32px 0;
+    color: #fafafa;
+}
+
+.services-section .services {
+    width: 70%;
+    margin: 0 auto;
+    padding: 44px 0;
+}
+
+.services-section .services p {
+    padding: 25px 0;
+    color: #bababa !important;
+}
+
+.services-section .services .gallery-one {
+    display: flex;
+    /* gap: 20px */
+}
+
+.services-section .services .gallery-one .items {
+    padding: 44px;
+    height: 420px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: end;
+}
+
+.services-section .services .gallery-one .items:nth-child(1) {
+    background-image: url('../media/pice_4.png');
+    background-size: cover;
+}
+
+.services-section .services .gallery-one .items:nth-child(2) {
+    background-image: url('../media/pice_3.png');
+    background-size: cover;
+}
+
+
+.services-section .services .gallery-two {
+    display: flex;
+    /* gap: 20px */
+}
+
+.services-section .services .gallery-two .items {
+    padding: 44px;
+    height: 420px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: end;
+}
+
+.services-section .services .gallery-two .items:nth-child(1) {
+    background-image: url('../media/pice_2.png');
+    background-size: cover;
+}
+
+.services-section .services .gallery-two .items:nth-child(2) {
+    background-image: 
+    linear-gradient(to bottom, rgba(0,0,0,0) 2%, rgba(0,0,0,0.8) 100%),
+    url('../media/nubelson-fernandes-ZdOsQiwp0Ss-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
