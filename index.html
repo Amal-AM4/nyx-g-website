@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="vendors/css/all.min.css">
     <script src="vendors/js/all.min.js"></script>
 
+    <link rel="stylesheet" href="vendors/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/css/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="vendors/css/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -79,6 +82,15 @@
             </div>
             <div class="col-2">
                 <img src="assets/media/custom-nzxt-bld-components.webp" alt="hero-image">
+            </div>
+        </section>
+
+        <section class="products">
+            <!-- Set up your HTML -->
+            <div class="owl-carousel">
+                <div class="item">Slide 1</div>
+                <div class="item">Slide 2</div>
+                <div class="item">Slide 3</div>
             </div>
         </section>
 
@@ -208,16 +220,16 @@
 
                 <div class="gallery-one">
                     <div class="items">
-                        <h3>Custom Gaming PCs</h3>
+                        <h3>Custom Gaming PCs & Accessories</h3>
                         <p>
-                            Tailor-made for competitive gaming, video editing & professional workloads.Only the best components – OEM & second’s available for every budget.
+                            From high-performance custom-built gaming PCs to essential accessories, we deliver top-quality components—OEM and second-hand—for every budget. Explore our range of gaming mice, mechanical keyboards, USB drives, hard drives, cases, and monitors. We also offer PC assembly, upgrades, repairs, and optimization to keep your system at peak performance.
                         </p>
                     </div>
 
                     <div class="items">
                         <h3>Crypto Mining Rigs & ASIC Miners</h3>
                         <p>
-                            High-efficiency rigs with optimized hash rates. Designed for long-term profitability and stability.
+                            High-efficiency rigs with optimized hash rates. Designed for long-term profitability and stability. We build cost-effective rigs tailored to your budget without compromising performance. Get reliable, scalable mining solutions backed by expert support and maintenance.
                         </p>
                     </div>
 
@@ -227,14 +239,15 @@
                     <div class="items">
                         <h3>Bulk Graphic Card Deals</h3>
                         <p>
-                            For mining, gaming cafes, and corporate projects. Reliable sourcing and competitive pricing.
+                            For mining, gaming cafes, and corporate projects. We stock the latest, most high-performing, and even rare graphic cards from top brands. Both fresh units and thoroughly tested second-hand options are available, ensuring reliability and competitive pricing.
                         </p>
                     </div>
 
                     <div class="items">
                         <h3>PC Rentals – Daily, Weekly, Monthly</h3>
                         <p>
-                            For offices, events, exams, gaming competitions & temporary projects. On-site delivery, setup & 24/7 technical support.
+                            For offices, events, exams, gaming competitions & temporary projects. On-site delivery, setup & 24/7 technical support. Flexible configurations to match your exact needs, with both high-performance and budget-friendly options available. All systems are maintained and tested for smooth, hassle-free operation.
+
                         </p>
                     </div>
 
@@ -263,7 +276,6 @@
             </div>
         </section>
 
-
         <section class="footer-section">
             <div class="trustpilot-section">
                 <span class="logo">Google Reviews</span>
@@ -279,8 +291,29 @@
     <footer></footer>
     
 
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="vendors/js/owl.carousel.min.js"></script>
 
     <script src="vendors/js/swiper-bundle.min.js"></script>
     <script src="assets/js/app.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 1,             // Show one item at a time
+                loop: true,           // Infinite loop
+                autoplay: true,       // Auto slide
+                autoplayTimeout: 3000,// Time between slides
+                autoplayHoverPause: true, 
+                nav: false,            // Prev/Next buttons
+                dots: true,           // Navigation dots
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 1 },
+                    1000: { items: 1 }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
