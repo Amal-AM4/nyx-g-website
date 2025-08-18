@@ -46,26 +46,22 @@
 
     <main>
 
-        <!-- Loader -->
-        <div id="loader">
-            <div class="spinner"></div>
-        </div>
-
-        <!-- Gallery -->
+        <!-- Masonry Gallery -->
         <div class="gallery" id="gallery">
-            <!-- Example Items -->
-            
-
+            <!-- JS will inject items -->
         </div>
 
         <!-- Preview Modal -->
-        <div id="previewModal" class="preview-modal">
-            <div id="previewContent"></div>
-                <div class="preview-controls">
-                    <button onclick="prevItem()">></button>
-                    <button onclick="nextItem()">></button>
-                </div>
-            <span class="close-btn" onclick="closePreview()">✕</span>
+        <div id="preview" class="preview">
+            <span class="close" onclick="closePreview()">&times;</span>
+            <div class="preview-content">
+                <img id="preview-img" src="" alt="">
+                <video id="preview-video" controls></video>
+            </div>
+            <div class="preview-controls">
+                <button onclick="prevItem()">&#10094;</button>
+                <button onclick="nextItem()">&#10095;</button>
+            </div>
         </div>
 
 
