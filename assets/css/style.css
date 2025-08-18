@@ -199,30 +199,61 @@ body {
 
 .products {
     width: 100%;
+    background: linear-gradient(to bottom, white 0%, #f5f5f5 80%, #eeeeee 100%);
 }
 
-.products .owl-carousel .item {
-    width: 100vw;         /* Full viewport width */
-    height: 50vh;        /* Full viewport height */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    font-size: 3rem;
+.products .owl-carousel {
+    background-color: transparent;
+}
+
+.products .owl-carousel .slide {
+    width: 70%;
+    margin: 0 auto;
+    /* height: 500px;      */
+    color: #111;
+}
+
+.products .owl-carousel .slide .wrapper {
+    padding: 24px 32px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.products .owl-carousel .slide .wrapper .col-1 {
+    flex: 1;
+}
+
+.products .owl-carousel .slide .wrapper .col-1 .action-btn {
+    background-color: #111;
+    color: #fff;
+    margin-top: 28px;
+    border-radius: var(--border-rd-small);
+}
+
+.products .owl-carousel .slide .wrapper .col-1 p {
+    font-size: 90%;
+    width: 80%;
+    text-align: justify;
+    line-height: 1.6rem;
+    padding: 12px 0;
+    color: #3d3d3d;
+}
+
+.products .owl-carousel .slide .wrapper .col-2 {
+    flex: 1;
+}
+
 /* Example backgrounds for testing */
-.products .owl-carousel .item:nth-child(1) {
-    background-image: url('https://picsum.photos/id/1015/1920/1080');
+/* .products .owl-carousel .slide:nth-child(1) {
+    
 }
-.products .owl-carousel .item:nth-child(2) {
-    background-image: url('https://picsum.photos/id/1016/1920/1080');
+.products .owl-carousel .slide:nth-child(2) {
+    
 }
-.products .owl-carousel .item:nth-child(3) {
-    background-image: url('https://picsum.photos/id/1018/1920/1080');
-}
+.products .owl-carousel .slide:nth-child(3) {
+    
+} */
 
 
 .brands {
