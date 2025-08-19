@@ -14,6 +14,10 @@
     --gold-yellow: #fdd412;
 }
 
+.active-page {
+    color: var(--gold-yellow) !important;
+}
+
 h1::selection,
 h2::selection,
 h3::selection,

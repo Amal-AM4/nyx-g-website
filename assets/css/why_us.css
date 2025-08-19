@@ -1,0 +1,93 @@
+.transforming {
+    padding-top: 124px;
+    padding-bottom: 32px;
+}
+
+.transforming div {
+    width: 80%;
+}
+
+.transforming div h2 {
+    font-size: 54px;
+    line-height: 3.5rem;
+}
+
+.transforming div p {
+    font-size: 22px;
+    width: 80%;
+    line-height: 1.8rem;
+}
+
+.limits {
+    margin-top: 64px;
+}
+
+.limits .push-row {
+    display: flex;
+}
+
+.limits .push-row .col-md-1 {
+    width: 40%;
+}
+
+.limits .push-row h2 {
+    width: 80%;
+}
+
+.limits .push-row .col-md-2 {
+    width: 60%;
+}
+
+.limits .push-row .col-md-2 p {
+    padding-top: 0;
+}
+
+.man {
+    margin-top: 64px;
+    color: #fff;
+}
+
+.man .man-box {
+    display: flex;
+    gap: 10px;
+    background-color: #111;
+}
+
+.man .man-box .left .profile {
+    padding: 42px;
+}
+
+.man .man-box .left {
+    flex: 2;
+}
+
+.man .man-box .left p {
+    /* width: 90%; */
+    color: #fafafabe;
+}
+
+.man .man-box .footer-profile {
+    margin-top: 28px;
+    display: flex;
+    gap: 20px;
+}
+
+.man .man-box .footer-profile .l img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.man .man-box .footer-profile .r {
+    /* align-items: center; */
+    justify-content: center;
+    align-content: center;
+}
+
+.man .man-box .right {
+    flex: 1;
+    background-image: url('../../vendors/images/askar-02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
