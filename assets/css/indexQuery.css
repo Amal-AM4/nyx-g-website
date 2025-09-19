@@ -1,3 +1,109 @@
+@media only screen and (max-width: 768px) {
+    /* body {
+        background-color: red;
+    } */
+
+    section,
+    header nav,
+    .products .owl-carousel .slide,
+    .info-board .container,
+    .ads,
+    .ads-second,
+    .services-section .services,
+    footer .footer-container {
+        width: 96% !important;
+    }
+
+    header nav ul li:first-child {
+        flex: 2;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .col-1,
+    .hero .col-2 {
+        width: 100%;
+    }
+
+    .review {
+        width: 70% !important;
+        margin: 0 auto;
+    }
+
+    .products {
+        margin-top: 0px !important;
+        width: 100% !important;
+    }
+
+    .info-board {
+        width: 100% !important;
+    }
+
+    .info-board .container {
+        flex-direction: column;
+    }
+
+    .ads, .ads-second {
+        width: 100% !important;
+    }
+    
+    section.ads > div.col-1 > a {
+        margin-top: 0 !important;
+    }
+
+    .ads {
+        flex-direction: column;
+    }
+
+    .ads-second {
+        flex-direction: column;
+        background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), /* overlay */
+        url("../media/Image_with_Text_4_ed291b40-9c09-4018-8310-18485cb037c7.webp") center/cover no-repeat;       /* image */
+    }
+
+    .ads-second .col-1 .large-heading, 
+    .ads-second .col-1 p {
+        color: #fafafa !important;
+    }
+
+    .services-section {
+        width: 100% !important;
+    }
+
+    .services-section .hero-small-text {
+        margin-bottom: 20px;
+    }
+
+    .services-section .gallery-one {
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .services-section .gallery-two {
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .services-section .gallery-one .items p, 
+    .services-section .gallery-two .items p { 
+        color: #fafafa !important;
+    }
+    
+
+    section.connect > div.main-heading > h4 {
+        width: 90%;
+    }
+
+    section.connect > div.row {
+        width: 90%;
+    }
+}
+
+
+
 
 @media only screen and (max-width: 1024px) {
     /* body {
