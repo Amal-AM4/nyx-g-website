@@ -91,3 +91,23 @@
     background-repeat: no-repeat;
 }
 
+.meet-team .teamContainer {
+    display: flex;
+}
+
+.meet-team .teamContainer .left-div,
+.meet-team .teamContainer .right-div {
+    flex: 1;
+}
+
+.meet-team .teamContainer .left-div {
+    background-image: url('../../vendors/images/Sreejith.jpg');
+    background-size: cover;
+    height: 640px;
+}
+
+.meet-team .teamContainer .right-div {
+    padding-left: 24px;
+    align-content: center;
+}
+

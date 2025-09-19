@@ -1,0 +1,56 @@
+
+@media only screen and (max-width: 1024px) {
+    /* body {
+        background-color: red;
+    } */
+
+    section,
+    header nav,
+    .products .owl-carousel .slide,
+    .info-board .container,
+    .ads,
+    .ads-second,
+    .services-section .services,
+    footer .footer-container {
+        width: 100%;
+    }
+
+    header nav ul li:first-child {
+        flex: 2;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    .hero .col-1,
+    .hero .col-2 {
+        width: 100%;
+    }
+
+    .review {
+        width: 50%;
+    }
+
+    
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+    /* body {
+        background-color: red;
+    } */
+
+    section,
+    header nav,
+    .products .owl-carousel .slide,
+    .info-board .container,
+    .ads,
+    .ads-second,
+    .services-section .services,
+    footer .footer-container {
+        width: 90%;
+    }
+}
