@@ -21,7 +21,6 @@
 
     .hero {
         flex-direction: column;
-        margin-bottom: 120px;
     }
 
     .hero .col-1,
@@ -30,9 +29,24 @@
     }
 
     .review {
-        width: 50%;
+        width: 60%;
     }
 
+    .products {
+        margin-top: 120px;
+    }
+
+    .info-board .container {
+        flex-direction: column;
+    }
+
+    .ads, .ads-second {
+        width: 100% !important;
+    }
+    
+    section.ads > div.col-1 > a {
+        margin-top: 0 !important;
+    }
     
 }
 
