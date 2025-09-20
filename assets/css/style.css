@@ -423,7 +423,7 @@ body {
 
 
 .ads {
-    height: 420px;
+    height: auto;
     background-image: url('../media/3840x1250_Shopify_2.webp');
     background-size: cover;
     display: flex;
@@ -459,7 +459,7 @@ body {
 
 
 .ads-second {
-    height: 420px;
+    height: auto;
     background-image: url('../media/Image_with_Text_4_ed291b40-9c09-4018-8310-18485cb037c7.webp');
     background-size: cover;
     display: flex;

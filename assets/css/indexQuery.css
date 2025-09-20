@@ -1,8 +1,5 @@
-@media only screen and (max-width: 768px) {
-    /* body {
-        background-color: red;
-    } */
-
+/* General styles for all screen sizes up to 1440px */
+@media only screen and (max-width: 1440px) {
     section,
     header nav,
     .products .owl-carousel .slide,
@@ -11,144 +8,190 @@
     .ads-second,
     .services-section .services,
     footer .footer-container {
-        width: 96% !important;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    section,
+    header nav,
+    .products .owl-carousel .slide,
+    .info-board .container,
+    .ads,
+    .ads-second,
+    .services-section .services,
+    footer .footer-container {
+        width: 90%;
     }
 
+    /* Navigation */
     header nav ul li:first-child {
         flex: 2;
     }
-
     header nav ul li:nth-of-type(2),
     header nav ul li:nth-of-type(3),
-    header nav ul li:nth-of-type(4)
-    {
+    header nav ul li:nth-of-type(4) {
         display: none;
     }
-
     header nav ul li:nth-of-type(5) {
         display: inline;
     }
-
     header nav ul li .fa-bars {
         font-size: 24px !important;
     }
 
+    /* Hero section */
     .hero {
         height: 70vh;
         flex-direction: column;
-        align-items: stretch; /* instead of flex-start */
+        align-items: stretch;
     }
-
     .hero .col-1,
     .hero .col-2 {
         width: 100%;
     }
-
-    /* Reset .col-2 alignment so it doesn't push down */
     .hero .col-2 {
-        align-items: center; /* or flex-start */
-        justify-content: center; /* or flex-start */
+        align-items: center;
+        justify-content: center;
     }
-
     .hero .col-2 img {
         width: 100%;
-        height: auto; /* keep proportion */
+        height: auto;
     }
 
+    /* Review section */
     .review {
         display: none;
-    }
-
-    .products {
-        margin-top: 0px !important;
-        width: 100% !important;
-    }
-
-    .info-board {
-        width: 100% !important;
     }
 
     .info-board .container {
         flex-direction: column;
     }
 
-    .ads, .ads-second {
+
+    .ads-second {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url("../media/Image_with_Text_4_ed291b40-9c09-4018-8310-18485cb037c7.webp") center/cover no-repeat;
+    }
+    .ads-second .col-1 .large-heading,
+    .ads-second .col-1 p {
+        color: #fafafa !important;
+    }
+}
+
+/* Tablet and Mobile devices: 768px and below */
+@media only screen and (max-width: 768px) {
+    /* General layout */
+    section,
+    header nav,
+    .products .owl-carousel .slide,
+    .info-board .container,
+    .ads,
+    .ads-second,
+    .services-section .services,
+    footer .footer-container {
+        width: 96%;
+    }
+
+    /* Navigation */
+    header nav ul li:first-child {
+        flex: 2;
+    }
+    header nav ul li:nth-of-type(2),
+    header nav ul li:nth-of-type(3),
+    header nav ul li:nth-of-type(4) {
+        display: none;
+    }
+    header nav ul li:nth-of-type(5) {
+        display: inline;
+    }
+    header nav ul li .fa-bars {
+        font-size: 24px !important;
+    }
+
+    /* Hero section */
+    .hero {
+        height: 70vh;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .hero .col-1,
+    .hero .col-2 {
+        width: 100%;
+    }
+    .hero .col-2 {
+        align-items: center;
+        justify-content: center;
+    }
+    .hero .col-2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Review section */
+    .review {
+        display: none;
+    }
+
+    /* Products section */
+    .products {
+        margin-top: 0 !important;
         width: 100% !important;
     }
-    
+
+    /* Info board */
+    .info-board .container {
+        flex-direction: column;
+    }
+
+    /* Ads section */
+    .ads, .ads-second {
+        width: 100% !important;
+        flex-direction: column;
+    }
     section.ads > div.col-1 > a {
         margin-top: 0 !important;
     }
-
-    .ads {
-        flex-direction: column;
-    }
-
     .ads-second {
-        flex-direction: column;
-        background: 
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), /* overlay */
-        url("../media/Image_with_Text_4_ed291b40-9c09-4018-8310-18485cb037c7.webp") center/cover no-repeat;       /* image */
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url("../media/Image_with_Text_4_ed291b40-9c09-4018-8310-18485cb037c7.webp") center/cover no-repeat;
     }
-
-    .ads-second .col-1 .large-heading, 
+    .ads-second .col-1 .large-heading,
     .ads-second .col-1 p {
         color: #fafafa !important;
     }
 
-    .services-section {
-        width: 100% !important;
-    }
-
+    /* Services section */
     .services-section .hero-small-text {
         margin-bottom: 20px;
     }
-
-    .services-section .gallery-one {
-        flex-direction: column;
-        width: 100% !important;
-    }
-
-    .services-section .gallery-one .items:first-child, 
-    .services-section .gallery-one .items:last-child,
-    .services-section .gallery-two .items:first-child,
-    .services-section .gallery-two .items:last-child
-    {
-        background-image: none !important;
-    }
-
+    .services-section .gallery-one,
     .services-section .gallery-two {
         flex-direction: column;
         width: 100% !important;
     }
-
-    .services-section .gallery-one .items p, 
-    .services-section .gallery-two .items p { 
+    .services-section .gallery-one .items:first-child,
+    .services-section .gallery-one .items:last-child,
+    .services-section .gallery-two .items:first-child,
+    .services-section .gallery-two .items:last-child {
+        background-image: none !important;
+        padding: 8px;
+    }
+    .services-section .gallery-one .items p,
+    .services-section .gallery-two .items p {
         color: #fafafa !important;
     }
-    
 
-    section.connect > div.main-heading > h4 {
-        width: 90%;
-    }
-
+    /* Connect section */
+    section.connect > div.main-heading > h4,
     section.connect > div.row {
         width: 90%;
     }
-
-    .active-modal {
-        display: flex;
-    }
 }
 
-
-
-
-@media only screen and (max-width: 1024px) {
-    /* body {
-        background-color: red;
-    } */
-
+/* Small Mobile: 425px and below */
+@media only screen and (max-width: 435px) {
+    /* General layout */
     section,
     header nav,
     .products .owl-carousel .slide,
@@ -157,69 +200,147 @@
     .ads-second,
     .services-section .services,
     footer .footer-container {
-        width: 100%;
+        width: 90% ;
     }
 
-    header nav ul li:first-child {
-        flex: 2;
+    /* Navigation */
+    header nav ul li .fa-bars {
+        font-size: 22px !important;
     }
 
+    /* Hero section */
     .hero {
         height: 70vh;
         flex-direction: column;
     }
+    
 
-    .hero .col-1,
-    .hero .col-2 {
+    .products .owl-carousel .slide .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .products .owl-carousel .slide .wrapper .col-1 {
         width: 100%;
     }
 
-    .review {
-        /* width: 60%; */
-        display: none;
+    .products .owl-carousel .slide .wrapper .col-1 p {
+        width: 100%;
+        /* background-color: rebeccapurple; */
     }
 
-    .products {
-        margin-top: 34px !important;
+    /* Info board */
+    .info-board .container .col-1 .large-heading {
+        width: 100%;
     }
-
-    .info-board .container {
+    .info-board .container .col-2 .row-1,
+    .info-board .container .col-2 .row-2 {
         flex-direction: column;
     }
 
-    .ads, .ads-second {
-        width: 100% !important;
+    /* Ads section */
+    .ads-second {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                    url("../media/Image_with_Text_4_ed291b40-9c09-4018-8310-18485cb037c7.webp") center/cover no-repeat;
     }
-    
-    section.ads > div.col-1 > a {
-        margin-top: 0 !important;
-    }
-
-    section.connect > div.main-heading > h4 {
-        width: 90%;
+    .ads-second .col-1 .large-heading,
+    .ads-second .col-1 p {
+        color: #fafafa !important;
     }
 
-    section.connect > div.row {
-        width: 90%;
+    /* Services section */
+    .services-section .hero-small-text {
+        margin-bottom: 15px;
     }
-    
+
+    .connect .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect .row .col-md-1 {
+        margin-bottom: 32px;
+    }
+
+    .connect .row .col-md-2 .information,
+    .connect .row .col-md-2 .information .hero-small-text
+    {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 414px) and (max-height: 896px) {
+    /* Your CSS rules here */
+    .hero {
+        height: 80vh;
+    }
+}
+
+
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+    /* Your CSS rules here */
+    .hero {
+        height: 80vh;
+    }
 }
 
 
 
-@media only screen and (max-width: 1440px) {
-    /* body {
-        background-color: red;
-    } */
+/* Extra Small Mobile: 375px */
+@media only screen and (max-width: 375px) {
+    .hero {
+        height: 55vh;
+    }
+    header nav ul li .fa-bars {
+        font-size: 20px !important;
+    }
 
-    section,
-    header nav,
-    .products .owl-carousel .slide,
-    .info-board .container,
-    .ads,
-    .ads-second,
-    .services-section .services,
-    footer .footer-container {
-        width: 90%;
+    .modal-content a {
+        font-size: 20px !important;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 375px) and (max-height: 667px) {
+    /* Your CSS rules here */
+    .hero {
+        height: 100vh;
     }
 }
+
+@media only screen and (max-width: 360px) and (max-height: 740px) {
+    /* Your CSS rules here */
+    .hero {
+        height: 100vh;
+    }
+}
+
+
+/* Ultra Small Mobile: 320px */
+@media only screen and (max-width: 320px) {
+    .hero {
+        height: 70vh;
+    }
+
+    header nav ul li .fa-bars {
+        font-size: 18px !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 540px) and (max-height: 720px) {
+    /* Your CSS rules here */
+    .hero {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 344px) and (max-height: 882px) {
+    /* Your CSS rules here */
+    .hero {
+        height: 90vh;
+    }
+}
+
