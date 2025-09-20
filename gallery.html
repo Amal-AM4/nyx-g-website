@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/galleryQuery.css">
 </head>
 <body>
 
@@ -38,11 +39,27 @@
             <ul>
                 <li><a href="index.html" class="logo">NYX - G Store</a></li>
                 <li><a href="why_us.html">Why Us</a></li>
-                <li><a href="#" class="active-page">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li class="active"><a href="#">Contact Us</a></li>
+                <li class="menu-col" id="menu-btn">
+                    <i class="fa-solid fa-bars" ></i>
+                </li>
             </ul>
         </nav>
     </header>
+
+    <!-- Modal for small screens -->
+    <div class="modal" id="menu-modal">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <div class="modal-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="why_us.html">Why Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
 
     <main>
 
@@ -111,6 +128,7 @@
     </footer>
 
 
+    <script src="assets/js/menuModal.js" defer></script>
     <script src="assets/js/gallery.js"></script>
     
 </body>
