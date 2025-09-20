@@ -18,8 +18,25 @@
         flex: 2;
     }
 
+    header nav ul li:nth-of-type(2),
+    header nav ul li:nth-of-type(3),
+    header nav ul li:nth-of-type(4)
+    {
+        display: none;
+    }
+
+    header nav ul li:nth-of-type(5) {
+        display: inline;
+    }
+
+    header nav ul li .fa-bars {
+        font-size: 24px !important;
+    }
+
     .hero {
+        height: 70vh;
         flex-direction: column;
+        align-items: stretch; /* instead of flex-start */
     }
 
     .hero .col-1,
@@ -27,9 +44,19 @@
         width: 100%;
     }
 
+    /* Reset .col-2 alignment so it doesn't push down */
+    .hero .col-2 {
+        align-items: center; /* or flex-start */
+        justify-content: center; /* or flex-start */
+    }
+
+    .hero .col-2 img {
+        width: 100%;
+        height: auto; /* keep proportion */
+    }
+
     .review {
-        width: 70% !important;
-        margin: 0 auto;
+        display: none;
     }
 
     .products {
@@ -82,6 +109,14 @@
         width: 100% !important;
     }
 
+    .services-section .gallery-one .items:first-child, 
+    .services-section .gallery-one .items:last-child,
+    .services-section .gallery-two .items:first-child,
+    .services-section .gallery-two .items:last-child
+    {
+        background-image: none !important;
+    }
+
     .services-section .gallery-two {
         flex-direction: column;
         width: 100% !important;
@@ -99,6 +134,10 @@
 
     section.connect > div.row {
         width: 90%;
+    }
+
+    .active-modal {
+        display: flex;
     }
 }
 
@@ -126,6 +165,7 @@
     }
 
     .hero {
+        height: 70vh;
         flex-direction: column;
     }
 
@@ -135,11 +175,12 @@
     }
 
     .review {
-        width: 60%;
+        /* width: 60%; */
+        display: none;
     }
 
     .products {
-        margin-top: 120px;
+        margin-top: 34px !important;
     }
 
     .info-board .container {
@@ -152,6 +193,14 @@
     
     section.ads > div.col-1 > a {
         margin-top: 0 !important;
+    }
+
+    section.connect > div.main-heading > h4 {
+        width: 90%;
+    }
+
+    section.connect > div.row {
+        width: 90%;
     }
     
 }

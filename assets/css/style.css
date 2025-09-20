@@ -101,8 +101,13 @@ header nav ul li:first-child {
     flex: 4 1 auto;
 }
 
+header nav ul li:nth-of-type(4) {
+    text-align: right;
+}
+
 header nav ul li:last-child {
     text-align: right;
+    display: none;
 }
 
 .logo {
@@ -809,6 +814,78 @@ body {
 
 
 
+
+
 .modal {
-    display: none;
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.active-modal {
+    display: flex !important;
+}
+
+/* Content box inside modal */
+.modal-content {
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    min-width: 280px;
+    background: #111; /* give modal body a visible background */
+}
+
+/* Close button (X) */
+.close-btn {
+    position: fixed; /* relative to screen */
+    top: 20px;
+    right: 20px;
+    font-size: 42px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2000; /* above modal */
+}
+
+.close-btn:hover {
+    color: #ff4444;
+}
+
+
+/* Modal links */
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0; /* push down below close button */
+}
+
+.modal-content li {
+    margin: 1.5rem 0; /* more breathing space */
+}
+
+.modal-content a {
+    text-decoration: none;
+    font-size: 24px;   /* bigger text size */
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.modal-content a:hover {
+    color: #00cfff;
+}
+
+.modal-content .active a {
+    color: #212121; /* highlight active link */
+    font-weight: 700;
 }

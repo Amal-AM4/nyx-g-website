@@ -45,9 +45,25 @@
                 <li><a href="why_us.html">Why Us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li class="active"><a href="#">Contact Us</a></li>
+                <li class="menu-col" id="menu-btn">
+                    <i class="fa-solid fa-bars" ></i>
+                </li>
             </ul>
         </nav>
     </header>
+
+    <!-- Modal for small screens -->
+    <div class="modal" id="menu-modal">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <div class="modal-content">
+            <ul>
+                <li><a href="why_us.html">Why Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
 
     <main>
 
@@ -469,21 +485,12 @@
     </footer>
 
 
-    <!-- Modal for small screens -->
-    <div class="modal" id="menu-modal">
-        <ul>
-            <li><a href="why_us.html">Why Us</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li class="active"><a href="#">Contact Us</a></li>
-        </ul>
-    </div>
-
     <script src="vendors/js/jquery.min.js"></script>
     <script src="vendors/js/owl.carousel.min.js"></script>
 
     <script src="vendors/js/swiper-bundle.min.js"></script>
 
-    <script src="assets/js/menuModal.js"></script>
+    <script src="assets/js/menuModal.js" defer></script>
     <script src="assets/js/app.js"></script>
 
     <script>
