@@ -29,6 +29,7 @@
 .contact-text p {
     margin-bottom: 20px;
     text-align: center;
+    color: rgba(255, 255, 255, 0.500);
 }
 
 .btn-contact {
@@ -160,6 +161,10 @@
 
 .btn-download i {
     margin-right: 10px;
+}
+
+.myWhatsAppButton {
+    z-index: 999;
 }
 
 

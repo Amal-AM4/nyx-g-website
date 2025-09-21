@@ -889,3 +889,8 @@ body {
     color: #212121; /* highlight active link */
     font-weight: 700;
 }
+
+
+.myWhatsAppButton {
+    z-index: 999;
+}
