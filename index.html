@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="vendors/css/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/css/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="vendors/css/aos.css">
+    <script src="vendors/js/aos.js"></script>
+
     <link rel="stylesheet" href="vendors/css/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -74,7 +77,7 @@
     <main>
 
         <section class="hero">
-            <div class="col-1">
+            <div class="col-1" data-aos="fade-right">
                 <div class="container">
                     <h1 class="large-heading">
                         Your One-Stop Destination for Custom PCs & Performance Tech
@@ -106,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-2" data-aos="fade-left">
                 <img src="assets/media/custom-nzxt-bld-components.webp" alt="hero-image">
             </div>
         </section>
@@ -251,7 +254,7 @@
             </div>
         </section>
 
-        <section class="info-board">
+        <section class="info-board" data-aos="fade-down">
             <div class="container">
                 <div class="col-1">
                     <p>We’re More Than Just a Computer Store</p>
@@ -309,7 +312,7 @@
 
         <div class="divider"></div>
 
-        <section class="ads">
+        <section class="ads" data-aos="fade-down">
             <div class="col-1">
                 <h1 class="large-heading">Play Without Limits. Your Rules.</h1>
                 <p>
@@ -323,7 +326,7 @@
 
         <div class="divider"></div>
 
-        <section class="ads-second">
+        <section class="ads-second" data-aos="fade-up">
             <div class="col-1">
                 <h1 class="large-heading">Ultimate 4K Gaming. Maxed Out.</h1>
                 <p>
@@ -337,7 +340,7 @@
 
         <div class="divider"></div>
 
-        <section class="services-section">
+        <section class="services-section" data-aos="fade-down">
             <div class="services">
                 <h2 class="large-heading">Our Services</h2>
                 <p class="hero-small-text">
@@ -410,7 +413,7 @@
             
         </section>
 
-        <section class="connect">
+        <section class="connect" data-aos="zoom-in">
             <div class="main-heading">
                 <h4 class="large-heading">
                 Want to connect directly with <span style="color: rgb(229, 9, 20);">Askar Hussain</span>?
@@ -519,6 +522,8 @@
                 }
             });
         });
+
+        AOS.init();
     </script>
 </body>
 </html>

@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="vendors/css/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/css/owl.theme.default.min.css">
 
+    <link rel="stylesheet" href="vendors/css/aos.css">
+    <script src="vendors/js/aos.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/contactQuery.css">
@@ -63,7 +66,7 @@
     </div>
 
     <main>
-        <section class="contact-section" id="contact">
+        <section class="contact-section" id="contact" data-aos="fade-down">
             <div class="contact-content-wrapper">
                 <div class="contact-text">
                     <h2 class="large-heading">Let's Talk About Your Next PC</h2>
@@ -93,7 +96,7 @@
             </div>
         </section>
 
-        <section class="flyer-download-section">
+        <section class="flyer-download-section" data-aos="fade-down">
             <div class="flyer-content">
                 <h2 class="large-heading">Download Our Company Flyer</h2>
                 <p class="hero-small-text">Get a detailed overview of our products, services, and special offers by downloading our official flyer.</p>
@@ -103,7 +106,7 @@
             </div>
         </section>
 
-        <section class="map-section">
+        <section class="map-section" data-aos="fade-down">
             <div class="map-content-wrapper">
                 <h2 class="large-heading">Find Our Location</h2>
                 <div class="map-container">
@@ -160,6 +163,11 @@
 
     <script type="text/javascript" src="vendors/js/floating-wpp.min.js"></script>
     <script src="assets/js/floatingWhatsApp.js"></script>
+
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
